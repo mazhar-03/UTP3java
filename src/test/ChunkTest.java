@@ -27,7 +27,7 @@ public class ChunkTest {
 
         assertArrayEquals(new String[]{"", "", ""}, Main.chunk("", 3));
 
-        assertArrayEquals(IntStream.rangeClosed(0, 99).mapToObj(_ -> "").toArray(), Main.chunk("", 100));
+        assertArrayEquals(IntStream.rangeClosed(0, 99).mapToObj(i -> "").toArray(), Main.chunk("", 100));
     }
 
     @Test
